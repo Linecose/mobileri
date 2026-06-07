@@ -26,7 +26,7 @@
 
 <!-- NAV -->
 <nav class="nav" id="mainNav">
-  <a href="#" class="nav-logo">Custom &amp; Nooke</a>
+  <a href="#" class="nav-logo">Mondi Mobileri Domi</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#shop">Shop</a></li>
@@ -50,7 +50,6 @@
   <div class="hero-grain"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Artisanal Home Decor · Est. 2018</div>
     <h1>Handmade <em>for</em><br>your home.</h1>
     <p class="hero-sub">Each piece is personal and unlike any other — crafted with intention, built to last a lifetime.</p>
     <div class="hero-btns">
@@ -254,39 +253,53 @@
           </div>
           <div class="info-item">
             <div class="info-label">Phone</div>
-            <div class="info-val">+632 8123 4567</div>
+            <a href="tel:+355692134320"><div class="info-val">+355 69 213 4320</div></a>
           </div>
           <div class="info-item">
             <div class="info-label">Studio</div>
-            <div class="info-val">Tiranë, Albania</div>
+            <a href="https://www.google.com/maps/place/Mondi+Mobileri+Domi/@40.8015923,19.9027909,15z/data=!4m17!1m10!3m9!1s0x13500ba08b44d03f:0x12695ec116be441c!2sMondi+Mobileri+Domi!8m2!3d40.8018778!4d19.9029887!10e5!14m1!1BCgIgARICCAQ!16s%2Fg%2F11t51zv2s2!3m5!1s0x13500ba08b44d03f:0x12695ec116be441c!8m2!3d40.8018778!4d19.9029887!16s%2Fg%2F11t51zv2s2?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><div class="info-val">RW23+GHH, Kuçovë, Shqipëri</div></a>
           </div>
         </div>
       </div>
+
+      
       <div class="contact-form reveal-right">
-        <div class="form-row">
-          <div class="form-field">
-            <label class="form-label">First Name</label>
-            <input type="text" placeholder="Maria">
-          </div>
-          <div class="form-field">
-            <label class="form-label">Last Name</label>
-            <input type="text" placeholder="Santos">
-          </div>
-        </div>
-        <div class="form-field">
-          <label class="form-label">Email</label>
-          <input type="email" placeholder="hello@example.com">
-        </div>
-        <div class="form-field">
-          <label class="form-label">What are you looking for?</label>
-          <input type="text" placeholder="e.g. Custom dining table, stoneware set...">
-        </div>
-        <div class="form-field">
-          <label class="form-label">Tell us more</label>
-          <textarea placeholder="Describe your space, budget, and timeline..."></textarea>
-        </div>
-        <button class="btn-submit">Send Message <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </div>
+  <div class="form-row">
+    <div class="form-field">
+      <label class="form-label">First Name</label>
+      <input type="text" id="firstName" placeholder="Maria">
+    </div>
+
+    <div class="form-field">
+      <label class="form-label">Last Name</label>
+      <input type="text" id="lastName" placeholder="Santos">
+    </div>
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">Email</label>
+    <input type="email" id="email" placeholder="hello@example.com">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">What are you looking for?</label>
+    <input type="text" id="lookingFor" placeholder="e.g. Custom dining table, stoneware set...">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">Tell us more</label>
+    <textarea id="message" placeholder="Describe your space, budget, and timeline..."></textarea>
+  </div>
+
+  <button class="btn-submit">
+    Send Message
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     </div>
   </div>
 </section>
@@ -298,7 +311,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div class="footer-brand-name">Custom &amp; Nooke</div>
+        <div class="footer-brand-name">Mondi Mobileri Domi</div>
         <p class="footer-brand-desc">Handmade, made-to-measure home decor crafted with intention and love. Each piece is personal and unlike any other.</p>
         <div class="footer-socials">
           <a class="social-btn" href="#" aria-label="Instagram">

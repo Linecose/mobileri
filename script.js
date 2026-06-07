@@ -76,3 +76,42 @@ document.querySelector('.btn-submit').addEventListener('click',function(){
   this.style.background='#639922';
   setTimeout(()=>{this.innerHTML='Send Message <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';this.style.background=''},3000);
 });
+
+
+emailjs.init("lDduSG_l1pKvwqOnZ");
+
+document.querySelector(".btn-submit").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const btn = this;
+
+    emailjs.send(
+        "service_8oeokui",
+        "template_nwnn8l9",
+        {
+            first_name: document.querySelector('input[placeholder="Maria"]').value,
+            last_name: document.querySelector('input[placeholder="Santos"]').value,
+            email: document.querySelector('input[type="email"]').value,
+            looking_for: document.querySelector('input[placeholder*="Custom"]').value,
+            message: document.querySelector("textarea").value
+        }
+    )
+    .then(() => {
+        btn.innerHTML = "Message Sent ✓";
+        btn.style.background = "#639922";
+
+        setTimeout(() => {
+            btn.innerHTML = `
+                Send Message
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            `;
+            btn.style.background = "";
+        }, 3000);
+    })
+    .catch((err) => {
+        console.error(err);
+        alert("Message failed to send!");
+    });
+});
