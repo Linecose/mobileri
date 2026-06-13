@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kushtet e Shërbimit të Mondi Mobileri Domi — kushtet që rregullojnë porositjen, prodhimin, dorëzimin dhe garancinë e mobiljeve me porosi, në përputhje me legjislacionin shqiptar.">
+<meta name="robots" content="noindex, follow">
+<title>Kushtet e Shërbimit | Mondi Mobileri Domi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brown:    #3b2a1a;
+  --amber:    #c58b3e;
+  --amber-l:  #d4a55a;
+  --amber-d:  #a97232;
+  --cream:    #f5f0e8;
+  --cream-d:  #ede6d8;
+  --warm:     #faf8f4;
+  --txt:      #2a1f14;
+  --txt-m:    #6b5540;
+  --txt-l:    #9e8570;
+  --serif:    'Cormorant Garamond', Georgia, serif;
+  --sans:     'Jost', sans-serif;
+  --ease:     cubic-bezier(0.16,1,0.3,1);
+}
+html{font-size:16px;scroll-behavior:smooth;overflow-x:hidden;width:100%}
+body{background:var(--warm);color:var(--txt);font-family:var(--sans);overflow-x:hidden;width:100%;line-height:1.7}
+
+/* TOP BAR */
+.topbar{
+  background:var(--brown);padding:20px 60px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+}
+.topbar-logo{
+  font-family:var(--serif);font-size:20px;font-weight:600;
+  letter-spacing:.12em;color:#fff;text-decoration:none;
+}
+.topbar-back{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:color .25s;
+}
+.topbar-back:hover{color:#fff}
+
+/* HERO */
+.legal-hero{
+  background:var(--brown);position:relative;overflow:hidden;
+  padding:60px 60px 70px;
+}
+.legal-hero-accent{
+  position:absolute;right:-100px;top:-100px;
+  width:320px;height:320px;border-radius:50%;
+  background:rgba(197,139,62,.08);pointer-events:none;
+}
+.legal-hero .inner{position:relative;z-index:1;max-width:880px}
+.legal-eyebrow{
+  font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--amber-l);margin-bottom:18px;
+  display:flex;align-items:center;gap:12px;
+}
+.legal-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--amber-l)}
+.legal-hero h1{
+  font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);
+  font-weight:300;color:#fff;line-height:1.12;margin-bottom:18px;
+}
+.legal-hero h1 em{font-style:italic;color:var(--amber-l)}
+.legal-hero p{font-size:14px;color:rgba(255,255,255,.55);font-weight:300;max-width:560px}
+.legal-meta{
+  margin-top:28px;display:flex;gap:28px;flex-wrap:wrap;
+}
+.legal-meta-item{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.legal-meta-item strong{color:var(--amber-l);font-weight:500;letter-spacing:.05em;display:block;margin-top:4px;font-size:13px;text-transform:none}
+
+/* LAYOUT */
+.legal-wrap{
+  max-width:1100px;margin:0 auto;padding:70px 60px 100px;
+  display:grid;grid-template-columns:280px 1fr;gap:70px;align-items:start;
+}
+
+/* TOC */
+.toc{position:sticky;top:30px}
+.toc-title{
+  font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--amber);margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;
+}
+.toc-title::before{content:'';display:block;width:20px;height:1px;background:var(--amber)}
+.toc ol{list-style:none;display:flex;flex-direction:column;gap:11px}
+.toc a{
+  font-size:13px;color:var(--txt-m);text-decoration:none;font-weight:300;
+  display:flex;gap:10px;transition:color .2s;line-height:1.4;
+}
+.toc a span{
+  font-family:var(--serif);font-size:13px;color:var(--txt-l);font-style:italic;flex-shrink:0;
+}
+.toc a:hover{color:var(--amber)}
+.toc-note{
+  margin-top:32px;padding:18px 20px;background:var(--cream);border-radius:12px;
+  border-left:3px solid var(--amber);
+}
+.toc-note p{font-size:12px;color:var(--txt-m);font-weight:300;line-height:1.7}
+.toc-note p strong{color:var(--txt);font-weight:600}
+
+/* CONTENT */
+.legal-content section{margin-bottom:52px;padding-top:8px}
+.legal-content section:first-child{margin-top:0}
+.legal-num{
+  font-family:var(--serif);font-size:1.05rem;color:var(--amber);font-style:italic;margin-right:10px;
+}
+.legal-content h2{
+  font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,1.9rem);
+  font-weight:500;color:var(--txt);line-height:1.25;margin-bottom:18px;
+  display:flex;align-items:baseline;gap:4px;
+  padding-bottom:14px;border-bottom:1px solid var(--cream-d);
+}
+.legal-content h3{
+  font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--amber-d);margin:26px 0 12px;
+}
+.legal-content p{font-size:15px;color:var(--txt-m);font-weight:300;margin-bottom:14px}
+.legal-content p strong, .legal-content li strong{color:var(--txt);font-weight:600}
+.legal-content ul, .legal-content ol.legal-list{
+  margin:0 0 16px 0;padding-left:0;list-style:none;
+  display:flex;flex-direction:column;gap:10px;
+}
+.legal-content ul li, .legal-content ol.legal-list li{
+  font-size:15px;color:var(--txt-m);font-weight:300;
+  padding-left:28px;position:relative;line-height:1.7;
+}
+.legal-content ul li::before{
+  content:'';position:absolute;left:0;top:9px;
+  width:8px;height:1px;background:var(--amber);
+}
+.legal-content ol.legal-list{counter-reset:legalitem}
+.legal-content ol.legal-list li{counter-increment:legalitem}
+.legal-content ol.legal-list li::before{
+  content:counter(legalitem) ".";position:absolute;left:0;top:0;
+  font-family:var(--serif);font-style:italic;color:var(--amber);font-size:14px;
+  width:auto;height:auto;background:none;
+}
+.legal-table{
+  width:100%;border-collapse:collapse;margin:18px 0 22px;
+  font-size:13px;background:var(--cream);border-radius:12px;overflow:hidden;
+}
+.legal-table th, .legal-table td{
+  text-align:left;padding:14px 18px;border-bottom:1px solid var(--cream-d);
+  font-weight:300;color:var(--txt-m);vertical-align:top;
+}
+.legal-table th{
+  font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;
+  color:var(--txt);background:var(--cream-d);
+}
+.legal-table tr:last-child td{border-bottom:none}
+.legal-highlight{
+  background:var(--cream);border-radius:12px;padding:22px 26px;margin:18px 0 22px;
+  border-left:3px solid var(--amber);
+}
+.legal-highlight p{margin-bottom:0}
+.legal-content a.inline-link{color:var(--amber-d);text-decoration:underline;text-decoration-color:rgba(197,139,62,.35);transition:color .2s}
+.legal-content a.inline-link:hover{color:var(--amber)}
+
+/* CONTACT CARD */
+.legal-contact-card{
+  background:var(--brown);border-radius:16px;padding:36px 40px;margin-top:60px;
+  position:relative;overflow:hidden;
+}
+.legal-contact-accent{
+  position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;
+  background:rgba(197,139,62,.08);pointer-events:none;
+}
+.legal-contact-card h2{
+  font-family:var(--serif);font-size:1.6rem;font-weight:300;color:#fff;margin-bottom:8px;
+  border:none;padding:0;
+}
+.legal-contact-card h2 em{font-style:italic;color:var(--amber-l)}
+.legal-contact-card p{font-size:14px;color:rgba(255,255,255,.55);font-weight:300;margin-bottom:22px;max-width:520px;position:relative;z-index:1}
+.legal-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;z-index:1}
+.legal-contact-item .label{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px}
+.legal-contact-item .val{font-size:14px;color:rgba(255,255,255,.85);font-weight:300}
+.legal-contact-item .val a{color:#fff;text-decoration:none;transition:color .2s}
+.legal-contact-item .val a:hover{color:var(--amber-l)}
+
+/* FOOTER */
+.legal-footer{
+  border-top:1px solid var(--cream-d);padding:28px 60px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.legal-footer p{font-size:12px;color:var(--txt-l);font-weight:300}
+.legal-footer a{font-size:12px;color:var(--txt-l);text-decoration:none;transition:color .2s}
+.legal-footer a:hover{color:var(--amber)}
+.legal-footer-links{display:flex;gap:24px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .legal-wrap{grid-template-columns:1fr;gap:40px;padding:50px 32px 80px}
+  .toc{position:relative;top:0}
+  .toc-note{display:none}
+  .legal-contact-grid{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:600px){
+  .topbar,.legal-hero,.legal-footer{padding-left:24px;padding-right:24px}
+  .legal-hero{padding-top:40px;padding-bottom:50px}
+  .legal-contact-card{padding:28px 24px}
+  .legal-meta{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="index.html" class="topbar-logo">Mondi Mobileri Domi</a>
+  <a href="index.html" class="topbar-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Kthehu te Faqja Kryesore
+  </a>
+</div>
+
+<!-- HERO -->
+<section class="legal-hero">
+  <div class="legal-hero-accent"></div>
+  <div class="inner">
+    <div class="legal-eyebrow">Dokument Ligjor</div>
+    <h1>Kushtet e <em>Shërbimit</em></h1>
+    <p>Këto Kushte të Shërbimit rregullojnë marrëdhënien ndërmjet Mondi Mobileri Domi dhe klientëve të saj në lidhje me kërkesat për oferta, porositjen, prodhimin, dorëzimin dhe garancinë e mobiljeve me porosi, në përputhje me Kodin Civil dhe legjislacionin për mbrojtjen e konsumatorëve në Republikën e Shqipërisë.</p>
+    <div class="legal-meta">
+      <div class="legal-meta-item">Hyn në fuqi
+        <strong>13 Qershor 2026</strong>
+      </div>
+      <div class="legal-meta-item">Përditësimi i fundit
+        <strong>13 Qershor 2026</strong>
+      </div>
+      <div class="legal-meta-item">Subjekti tregtar
+        <strong>Mondi Mobileri Domi</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="legal-wrap">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <div class="toc-title">Përmbajtja</div>
+    <ol>
+      <li><a href="#hyrje"><span>I.</span> Hyrje dhe Pranimi i Kushteve</a></li>
+      <li><a href="#perkufizime"><span>II.</span> Përkufizime</a></li>
+      <li><a href="#sherbimet"><span>III.</span> Shërbimet Tona</a></li>
+      <li><a href="#porosia"><span>IV.</span> Kërkesa për Ofertë dhe Porositja</a></li>
+      <li><a href="#cmimet"><span>V.</span> Çmimet, Depozita dhe Pagesat</a></li>
+      <li><a href="#dorezimi"><span>VI.</span> Prodhimi dhe Dorëzimi</a></li>
+      <li><a href="#anulimi"><span>VII.</span> Anulimi dhe E Drejta e Tërheqjes</a></li>
+      <li><a href="#garancia"><span>VIII.</span> Garancia dhe Cilësia</a></li>
+      <li><a href="#pergjegjesia"><span>IX.</span> Kufizimi i Përgjegjësisë</a></li>
+      <li><a href="#detyrimet"><span>X.</span> Detyrimet e Klientit</a></li>
+      <li><a href="#prona"><span>XI.</span> Pronësia Intelektuale</a></li>
+      <li><a href="#ligji"><span>XII.</span> Ligji i Zbatueshëm dhe Mosmarrëveshjet</a></li>
+      <li><a href="#ndryshimet"><span>XIII.</span> Ndryshime në Kushte</a></li>
+      <li><a href="#kontakt"><span>XIV.</span> Na Kontaktoni</a></li>
+    </ol>
+    <div class="toc-note">
+      <p><strong>Shënim:</strong> Ky dokument ka qëllim informues dhe nuk zëvendëson këshillimin juridik individual. Për çdo mosmarrëveshje specifike, palët mund t'i drejtohen gjykatave kompetente ose institucioneve të mbrojtjes së konsumatorit në Republikën e Shqipërisë.</p>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="legal-content">
+
+    <section id="hyrje">
+      <h2><span class="legal-num">I.</span> Hyrje dhe Pranimi i Kushteve</h2>
+      <p>Këto Kushte të Shërbimit ("Kushtet") rregullojnë përdorimin e faqes së internetit të Mondi Mobileri Domi, si dhe marrëdhëniet kontraktore ndërmjet Mondi Mobileri Domi ("ne", "kompania", "shitësi") dhe çdo personi fizik ose juridik që kërkon, porosit ose blen produkte dhe shërbime prej nesh ("klienti", "ju").</p>
+      <p>Këto Kushte janë hartuar në përputhje me:</p>
+      <ul>
+        <li><strong>Kodin Civil të Republikës së Shqipërisë</strong> (Ligji nr. 7850, datë 29.07.1994, i ndryshuar), në veçanti dispozitat mbi kontratat, detyrimet dhe kontratën e shitjes/porosisë së veprës.</li>
+        <li><strong>Ligjin nr. 9902, datë 17.04.2008 "Për Mbrojtjen e Konsumatorëve"</strong>, të ndryshuar, i cili garanton të drejta themelore për konsumatorët, përfshirë të drejtën për informim, sigurinë e produktit dhe garancinë.</li>
+        <li><strong>Ligjin nr. 9887, datë 10.03.2008 "Për Mbrojtjen e të Dhënave Personale"</strong>, të ndryshuar, siç përshkruhet më në detaje në <a class="inline-link" href="privacy.html">Politikën e Privatësisë</a> tonë.</li>
+        <li><strong>Ligjin nr. 9723, datë 03.05.2007 "Për Regjistrimin e Biznesit"</strong> dhe legjislacionin tregtar në fuqi për subjektet që ushtrojnë veprimtari ekonomike në Shqipëri.</li>
+      </ul>
+      <p>Duke vizituar faqen tonë, duke na dërguar një kërkesë për ofertë, ose duke konfirmuar një porosi (me shkrim, me email, nëpërmjet WhatsApp ose verbalisht në studion tonë), ju pranoni këto Kushte në tërësinë e tyre. Nëse nuk pajtoheni me ndonjë pjesë të këtyre Kushteve, ju lutemi mos vazhdoni me porosinë.</p>
+    </section>
+
+    <section id="perkufizime">
+      <h2><span class="legal-num">II.</span> Përkufizime</h2>
+      <table class="legal-table">
+        <tr><th>Termi</th><th>Përkufizimi</th></tr>
+        <tr><td><strong>"Produkt"</strong></td><td>Mobilje dhe artikuj të prodhuar me porosi nga Mondi Mobileri Domi, duke përfshirë por pa u kufizuar në kuzhina, dollapë, dhoma gjumi, dhoma fëmijësh, paradhoma dhe tavolina darke.</td></tr>
+        <tr><td><strong>"Porosi"</strong></td><td>Marrëveshja e konfirmuar ndërmjet klientit dhe Mondi Mobileri Domi për prodhimin dhe/ose dorëzimin e një ose më shumë Produkteve, sipas specifikimeve të rëna dakord.</td></tr>
+        <tr><td><strong>"Oferta"</strong></td><td>Dokumenti ose komunikimi me të cilin Mondi Mobileri Domi propozon çmimin, specifikimet teknike dhe afatin e prodhimit për një Produkt të kërkuar nga klienti.</td></tr>
+        <tr><td><strong>"Depozita"</strong></td><td>Shuma paraprake e pagueshme nga klienti për fillimin e prodhimit, sipas përqindjes së rënë dakord në Ofertë.</td></tr>
+      </table>
+    </section>
+
+    <section id="sherbimet">
+      <h2><span class="legal-num">III.</span> Shërbimet Tona</h2>
+      <p>Mondi Mobileri Domi ofron shërbime të projektimit, prodhimit dhe dorëzimit të mobiljeve me porosi, përfshirë por pa u kufizuar në:</p>
+      <ul>
+        <li>Kuzhina dhe dollapë me porosi, të projektuara sipas matjeve të hapësirës së klientit;</li>
+        <li>Mobilje për dhoma gjumi, dhoma fëmijësh dhe paradhoma;</li>
+        <li>Tavolina darke dhe pjesë të tjera mobiljesh sipas kërkesës;</li>
+        <li>Konsultim dhe matje në vendndodhjen e klientit, kur kjo është e mundur dhe e rënë dakord paraprakisht.</li>
+      </ul>
+      <p>Përshkrimet, imazhet dhe materialet e shfaqura në faqen tonë të internetit kanë qëllim ilustrues. Për shkak të natyrës së punës me dorë dhe materialeve natyrore (si druri), mund të ketë ndryshime të vogla në ngjyrë, vena dhe teksturë ndërmjet imazheve dhe Produktit final.</p>
+    </section>
+
+    <section id="porosia">
+      <h2><span class="legal-num">IV.</span> Kërkesa për Ofertë dhe Porositja</h2>
+      <ol class="legal-list">
+        <li>Klienti na kontakton nëpërmjet formularit në faqen e internetit, telefonit, WhatsApp ose email-it, duke përshkruar Produktin e dëshiruar, matjet (kur i njeh) dhe çdo preferencë tjetër.</li>
+        <li>Mondi Mobileri Domi, nëse e konsideron të nevojshme, organizon një konsultim ose matje në vend për të saktësuar specifikimet teknike.</li>
+        <li>Mondi Mobileri Domi përgatit dhe i përcjell klientit një Ofertë me përshkrimin e Produktit, materialet, çmimin total dhe afatin e parashikuar të prodhimit.</li>
+        <li>Porosia konsiderohet e konfirmuar vetëm pasi klienti (i) pranon Ofertën me shkrim (email, mesazh ose nënshkrim) dhe (ii) kryen pagesën e Depozitës së kërkuar, sipas seksionit V më poshtë.</li>
+        <li>Çdo ndryshim i kërkuar nga klienti pas konfirmimit të Porosisë (p.sh. ndryshim materiali, ngjyre ose matjesh) mund të ndikojë në çmimin final dhe/ose afatin e dorëzimit, dhe do t'i komunikohet klientit përpara se të zbatohet.</li>
+      </ol>
+    </section>
+
+    <section id="cmimet">
+      <h2><span class="legal-num">V.</span> Çmimet, Depozita dhe Pagesat</h2>
+      <p>Çmimet e Produkteve përcaktohen individualisht në bazë të matjeve, materialeve, finiturave dhe kompleksitetit të punës, dhe i komunikohen klientit në Ofertë para konfirmimit të Porosisë. Çmimet janë në Lekë (ALL), përveçse nëse specifikohet ndryshe me shkrim.</p>
+      <h3>Struktura tipike e pagesës</h3>
+      <ul>
+        <li><strong>Depozita fillestare:</strong> paguhet në momentin e konfirmimit të Porosisë, për të rezervuar materialet dhe për të filluar prodhimin. Përqindja specifike i komunikohet klientit në Ofertë.</li>
+        <li><strong>Pagesa përfundimtare:</strong> kryhet në momentin e dorëzimit ose montimit të Produktit, përveçse nëse është rënë dakord ndryshe me shkrim.</li>
+      </ul>
+      <p>Depozita është e nevojshme për shkak të natyrës së personalizuar të Produkteve, të cilat prodhohen posaçërisht për klientin dhe nuk mund të rishiten lehtësisht tek një palë e tretë.</p>
+    </section>
+
+    <section id="dorezimi">
+      <h2><span class="legal-num">VI.</span> Prodhimi dhe Dorëzimi</h2>
+      <p>Afati i prodhimit dhe dorëzimit i komunikohet klientit në Ofertë dhe është afat orientues, i llogaritur në bazë të ngarkesës së punës dhe disponueshmërisë së materialeve në momentin e konfirmimit të Porosisë.</p>
+      <ul>
+        <li>Mondi Mobileri Domi do të informojë klientin për çdo vonesë të konsiderueshme në krahasim me afatin e komunikuar fillimisht.</li>
+        <li>Dorëzimi mund të përfshijë transport dhe/ose montim në vendndodhjen e klientit, kur kjo është rënë dakord në Ofertë; kostot përkatëse, nëse ka, specifikohen paraprakisht.</li>
+        <li>Klienti është përgjegjës për të siguruar akses të përshtatshëm (hapësirë, ashensor, dyer) për dorëzimin dhe montimin e Produktit në vendndodhjen e tij.</li>
+        <li>Rreziku i dëmtimit ose humbjes së Produktit kalon tek klienti në momentin e dorëzimit dhe pranimit të Produktit.</li>
+      </ul>
+    </section>
+
+    <section id="anulimi">
+      <h2><span class="legal-num">VII.</span> Anulimi dhe E Drejta e Tërheqjes</h2>
+      <p>Sipas Ligjit nr. 9902/2008 "Për Mbrojtjen e Konsumatorëve", konsumatorët gëzojnë përgjithësisht të drejtën e tërheqjes nga kontratat e lidhura në distancë. Sidoqoftë, kjo e drejtë <strong>nuk zbatohet</strong> për mallra të prodhuara sipas specifikimeve të dhëna nga konsumatori ose të personalizuara qartazi për të, siç janë mobiljet me porosi që përbëjnë shërbimin kryesor të Mondi Mobileri Domi.</p>
+      <h3>Anulimi nga klienti</h3>
+      <ul>
+        <li>Klienti mund të kërkojë anulimin e Porosisë para fillimit të prodhimit; në këtë rast, Depozita mund t'i kthehet, e zbritur me shpenzimet tashmë të kryera (p.sh. materiale të porositura).</li>
+        <li>Pas fillimit të prodhimit, Depozita konsiderohet jo e kthyeshme, pasi materialet janë porositur/prerë posaçërisht sipas specifikimeve të Porosisë.</li>
+      </ul>
+      <h3>Anulimi nga Mondi Mobileri Domi</h3>
+      <p>Në rast se Mondi Mobileri Domi nuk është në gjendje të përmbushë Porosinë (p.sh. mungesë materiali, pamundësi teknike), klienti do të njoftohet sa më shpejt të jetë e mundur dhe çdo shumë e paguar e papërdorur do t'i kthehet plotësisht.</p>
+    </section>
+
+    <section id="garancia">
+      <h2><span class="legal-num">VIII.</span> Garancia dhe Cilësia</h2>
+      <p>Në përputhje me Ligjin nr. 9902/2008 dhe Kodin Civil, Mondi Mobileri Domi garanton se Produktet janë të lira nga defekte në materiale dhe punim në momentin e dorëzimit.</p>
+      <table class="legal-table">
+        <tr><th>Aspekt</th><th>Përshkrim</th></tr>
+        <tr><td>Periudha e garancisë</td><td>24 muaj nga data e dorëzimit, për defekte në prodhim dhe materiale, sipas standardeve të garancisë legale për konsumatorët.</td></tr>
+        <tr><td>Çfarë mbulon</td><td>Defekte strukturore, probleme me mekanizmat (mentesha, sirtarë, korrëza) dhe finiturat, kur përdorimi është normal dhe konform udhëzimeve.</td></tr>
+        <tr><td>Çfarë nuk mbulon</td><td>Dëmtime nga keqpërdorimi, lagështia ekstreme, ndryshime klimaterike jashtë normales, ndërhyrje ose modifikime të bëra nga vetë klienti ose persona të tretë.</td></tr>
+        <tr><td>Si të aplikoni</td><td>Kontaktoni Mondi Mobileri Domi me përshkrimin e problemit dhe foto, brenda afatit të garancisë; do të vlerësohet riparimi, zëvendësimi i pjesës, ose, kur ligji e parashikon, ulja e çmimit.</td></tr>
+      </table>
+      <p>Variacionet natyrore të drurit (vena, nuancë e ngjyrës) nuk konsiderohen defekte, pasi janë karakteristikë e materialeve natyrore të përdorura.</p>
+    </section>
+
+    <section id="pergjegjesia">
+      <h2><span class="legal-num">IX.</span> Kufizimi i Përgjegjësisë</h2>
+      <p>Mondi Mobileri Domi përpiqet të sigurojë që informacioni në faqen e internetit të jetë i saktë, por nuk garanton që faqja do të jetë gjithmonë e disponueshme, pa gabime ose e përditësuar plotësisht në çdo moment.</p>
+      <ul>
+        <li>Përgjegjësia e Mondi Mobileri Domi për dëme që rrjedhin nga një Porosi kufizohet, në masën e lejuar nga ligji, në vlerën e Porosisë përkatëse.</li>
+        <li>Mondi Mobileri Domi nuk mban përgjegjësi për vonesa ose dështime në përmbushjen e detyrimeve kontraktore, kur këto shkaktohen nga rrethana jashtë kontrollit të arsyeshëm (forcë madhore), si fatkeqësi natyrore, ndërprerje furnizimi me materiale ose masa shtetërore.</li>
+        <li>Asgjë në këto Kushte nuk synon të kufizojë ose përjashtojë të drejtat e konsumatorit të garantuara në mënyrë të pashkëputshme nga Ligji nr. 9902/2008 ose ligje të tjera detyruese.</li>
+      </ul>
+    </section>
+
+    <section id="detyrimet">
+      <h2><span class="legal-num">X.</span> Detyrimet e Klientit</h2>
+      <ul>
+        <li>Të ofrojë informacion të saktë mbi matjet, hapësirën dhe preferencat, pasi prodhimi bazohet drejtpërdrejt mbi këto të dhëna;</li>
+        <li>Të kryejë pagesat (Depozitë dhe pagesë përfundimtare) sipas afateve të rëna dakord në Ofertë;</li>
+        <li>Të sigurojë akses të përshtatshëm në vendndodhjen e dorëzimit/montimit, në datën e caktuar;</li>
+        <li>Të inspektojë Produktin në momentin e dorëzimit dhe të njoftojë menjëherë çdo dëmtim të dukshëm ose mospërputhje me Porosinë.</li>
+      </ul>
+    </section>
+
+    <section id="prona">
+      <h2><span class="legal-num">XI.</span> Pronësia Intelektuale</h2>
+      <p>I gjithë përmbajtja e faqes së internetit të Mondi Mobileri Domi — duke përfshirë tekstet, fotot, dizajnet, logon dhe elementet grafike — është pronë e Mondi Mobileri Domi ose përdoret me autorizimin përkatës dhe është e mbrojtur nga legjislacioni shqiptar dhe ndërkombëtar mbi të drejtën e autorit dhe pronësinë industriale. Çdo riprodhim, shpërndarje ose përdorim komercial pa autorizim paraprak me shkrim është i ndaluar.</p>
+      <p>Dizajnet e personalizuara të krijuara posaçërisht për një klient i kalojnë klientit për përdorim personal pas pagesës së plotë, përveçse nëse është rënë dakord ndryshe me shkrim.</p>
+    </section>
+
+    <section id="ligji">
+      <h2><span class="legal-num">XII.</span> Ligji i Zbatueshëm dhe Mosmarrëveshjet</h2>
+      <p>Këto Kushte rregullohen nga legjislacioni i Republikës së Shqipërisë. Çdo mosmarrëveshje që lind në lidhje me këto Kushte ose me një Porosi do të përpiqemi ta zgjidhim së pari në mënyrë miqësore, nëpërmjet komunikimit të drejtpërdrejtë ndërmjet palëve.</p>
+      <p>Nëse një zgjidhje miqësore nuk arrihet, mosmarrëveshja mund t'i drejtohet:</p>
+      <ul>
+        <li>Strukturave shtetërore për mbrojtjen e konsumatorëve, sipas Ligjit nr. 9902/2008; ose</li>
+        <li>Gjykatave kompetente të Republikës së Shqipërisë, në juridiksionin e të cilave ndodhet vendi i ushtrimit të veprimtarisë së Mondi Mobileri Domi.</li>
+      </ul>
+    </section>
+
+    <section id="ndryshimet">
+      <h2><span class="legal-num">XIII.</span> Ndryshime në Kushte</h2>
+      <p>Mondi Mobileri Domi mund të përditësojë këto Kushte të Shërbimit herë pas here, për shkak të ndryshimeve në legjislacion ose praktikat e biznesit. Çdo ndryshim do të reflektohet në këtë faqe, me përditësimin e datës "Përditësimi i fundit" në krye të dokumentit. Porositë e konfirmuara para një ndryshimi vazhdojnë të rregullohen nga Kushtet e vlefshme në momentin e konfirmimit, përveçse nëse ligji kërkon ndryshe.</p>
+    </section>
+
+    <!-- CONTACT CARD -->
+    <section id="kontakt">
+      <h2><span class="legal-num">XIV.</span> Na Kontaktoni</h2>
+      <p>Për pyetje në lidhje me këto Kushte të Shërbimit, një Ofertë ekzistuese ose një Porosi në proces, mund të na kontaktoni drejtpërdrejt:</p>
+      <div class="legal-contact-card">
+        <div class="legal-contact-accent"></div>
+        <h2>Kontaktoni <em>Mondin</em></h2>
+        <p>Ekipi ynë është i gatshëm t'iu ndihmojë me çdo pyetje rreth porosisë, çmimit ose afateve.</p>
+        <div class="legal-contact-grid">
+          <div class="legal-contact-item">
+            <div class="label">Email</div>
+            <div class="val"><a href="mailto:info@mondimobileridomi.al">info@mondimobileridomi.al</a></div>
+          </div>
+          <div class="legal-contact-item">
+            <div class="label">Telefon</div>
+            <div class="val"><a href="tel:+355692134320">+355 69 213 4320</a></div>
+          </div>
+          <div class="legal-contact-item">
+            <div class="label">Adresa</div>
+            <div class="val">RW23+GHH, Kuçovë, Shqipëri</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="legal-footer">
+  <p>© 2026 Mondi Mobileri Domi. Të gjitha të drejtat e rezervuara.</p>
+  <div class="legal-footer-links">
+    <a href="index.html">Faqja Kryesore</a>
+    <a href="privacy.html">Politika e Privatësisë</a>
+    <a href="index.html#contact">Kontakt</a>
+  </div>
+</div>
+
+</body>
+</html>

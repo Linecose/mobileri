@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Politika e Privatësisë e Mondi Mobileri Domi — informacion mbi mbledhjen, përdorimin dhe mbrojtjen e të dhënave personale në përputhje me legjislacionin shqiptar.">
+<meta name="robots" content="noindex, follow">
+<title>Politika e Privatësisë | Mondi Mobileri Domi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brown:    #3b2a1a;
+  --amber:    #c58b3e;
+  --amber-l:  #d4a55a;
+  --amber-d:  #a97232;
+  --cream:    #f5f0e8;
+  --cream-d:  #ede6d8;
+  --warm:     #faf8f4;
+  --txt:      #2a1f14;
+  --txt-m:    #6b5540;
+  --txt-l:    #9e8570;
+  --serif:    'Cormorant Garamond', Georgia, serif;
+  --sans:     'Jost', sans-serif;
+  --ease:     cubic-bezier(0.16,1,0.3,1);
+}
+html{font-size:16px;scroll-behavior:smooth;overflow-x:hidden;width:100%}
+body{background:var(--warm);color:var(--txt);font-family:var(--sans);overflow-x:hidden;width:100%;line-height:1.7}
+
+/* TOP BAR */
+.topbar{
+  background:var(--brown);padding:20px 60px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+}
+.topbar-logo{
+  font-family:var(--serif);font-size:20px;font-weight:600;
+  letter-spacing:.12em;color:#fff;text-decoration:none;
+}
+.topbar-back{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:color .25s;
+}
+.topbar-back:hover{color:#fff}
+
+/* HERO */
+.legal-hero{
+  background:var(--brown);position:relative;overflow:hidden;
+  padding:60px 60px 70px;
+}
+.legal-hero-accent{
+  position:absolute;right:-100px;top:-100px;
+  width:320px;height:320px;border-radius:50%;
+  background:rgba(197,139,62,.08);pointer-events:none;
+}
+.legal-hero .inner{position:relative;z-index:1;max-width:880px}
+.legal-eyebrow{
+  font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--amber-l);margin-bottom:18px;
+  display:flex;align-items:center;gap:12px;
+}
+.legal-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--amber-l)}
+.legal-hero h1{
+  font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);
+  font-weight:300;color:#fff;line-height:1.12;margin-bottom:18px;
+}
+.legal-hero h1 em{font-style:italic;color:var(--amber-l)}
+.legal-hero p{font-size:14px;color:rgba(255,255,255,.55);font-weight:300;max-width:560px}
+.legal-meta{
+  margin-top:28px;display:flex;gap:28px;flex-wrap:wrap;
+}
+.legal-meta-item{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.legal-meta-item strong{color:var(--amber-l);font-weight:500;letter-spacing:.05em;display:block;margin-top:4px;font-size:13px;text-transform:none}
+
+/* LAYOUT */
+.legal-wrap{
+  max-width:1100px;margin:0 auto;padding:70px 60px 100px;
+  display:grid;grid-template-columns:280px 1fr;gap:70px;align-items:start;
+}
+
+/* TOC */
+.toc{position:sticky;top:30px}
+.toc-title{
+  font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--amber);margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;
+}
+.toc-title::before{content:'';display:block;width:20px;height:1px;background:var(--amber)}
+.toc ol{list-style:none;display:flex;flex-direction:column;gap:11px}
+.toc a{
+  font-size:13px;color:var(--txt-m);text-decoration:none;font-weight:300;
+  display:flex;gap:10px;transition:color .2s;line-height:1.4;
+}
+.toc a span{
+  font-family:var(--serif);font-size:13px;color:var(--txt-l);font-style:italic;flex-shrink:0;
+}
+.toc a:hover{color:var(--amber)}
+.toc-note{
+  margin-top:32px;padding:18px 20px;background:var(--cream);border-radius:12px;
+  border-left:3px solid var(--amber);
+}
+.toc-note p{font-size:12px;color:var(--txt-m);font-weight:300;line-height:1.7}
+.toc-note p strong{color:var(--txt);font-weight:600}
+
+/* CONTENT */
+.legal-content section{margin-bottom:52px;padding-top:8px}
+.legal-content section:first-child{margin-top:0}
+.legal-num{
+  font-family:var(--serif);font-size:1.05rem;color:var(--amber);font-style:italic;margin-right:10px;
+}
+.legal-content h2{
+  font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,1.9rem);
+  font-weight:500;color:var(--txt);line-height:1.25;margin-bottom:18px;
+  display:flex;align-items:baseline;gap:4px;
+  padding-bottom:14px;border-bottom:1px solid var(--cream-d);
+}
+.legal-content h3{
+  font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--amber-d);margin:26px 0 12px;
+}
+.legal-content p{font-size:15px;color:var(--txt-m);font-weight:300;margin-bottom:14px}
+.legal-content p strong, .legal-content li strong{color:var(--txt);font-weight:600}
+.legal-content ul, .legal-content ol.legal-list{
+  margin:0 0 16px 0;padding-left:0;list-style:none;
+  display:flex;flex-direction:column;gap:10px;
+}
+.legal-content ul li, .legal-content ol.legal-list li{
+  font-size:15px;color:var(--txt-m);font-weight:300;
+  padding-left:28px;position:relative;line-height:1.7;
+}
+.legal-content ul li::before{
+  content:'';position:absolute;left:0;top:9px;
+  width:8px;height:1px;background:var(--amber);
+}
+.legal-content ol.legal-list{counter-reset:legalitem}
+.legal-content ol.legal-list li{counter-increment:legalitem}
+.legal-content ol.legal-list li::before{
+  content:counter(legalitem) ".";position:absolute;left:0;top:0;
+  font-family:var(--serif);font-style:italic;color:var(--amber);font-size:14px;
+  width:auto;height:auto;background:none;
+}
+.legal-table{
+  width:100%;border-collapse:collapse;margin:18px 0 22px;
+  font-size:13px;background:var(--cream);border-radius:12px;overflow:hidden;
+}
+.legal-table th, .legal-table td{
+  text-align:left;padding:14px 18px;border-bottom:1px solid var(--cream-d);
+  font-weight:300;color:var(--txt-m);vertical-align:top;
+}
+.legal-table th{
+  font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;
+  color:var(--txt);background:var(--cream-d);
+}
+.legal-table tr:last-child td{border-bottom:none}
+.legal-highlight{
+  background:var(--cream);border-radius:12px;padding:22px 26px;margin:18px 0 22px;
+  border-left:3px solid var(--amber);
+}
+.legal-highlight p{margin-bottom:0}
+.legal-content a.inline-link{color:var(--amber-d);text-decoration:underline;text-decoration-color:rgba(197,139,62,.35);transition:color .2s}
+.legal-content a.inline-link:hover{color:var(--amber)}
+
+/* CONTACT CARD */
+.legal-contact-card{
+  background:var(--brown);border-radius:16px;padding:36px 40px;margin-top:60px;
+  position:relative;overflow:hidden;
+}
+.legal-contact-accent{
+  position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;
+  background:rgba(197,139,62,.08);pointer-events:none;
+}
+.legal-contact-card h2{
+  font-family:var(--serif);font-size:1.6rem;font-weight:300;color:#fff;margin-bottom:8px;
+  border:none;padding:0;
+}
+.legal-contact-card h2 em{font-style:italic;color:var(--amber-l)}
+.legal-contact-card p{font-size:14px;color:rgba(255,255,255,.55);font-weight:300;margin-bottom:22px;max-width:520px;position:relative;z-index:1}
+.legal-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;z-index:1}
+.legal-contact-item .label{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px}
+.legal-contact-item .val{font-size:14px;color:rgba(255,255,255,.85);font-weight:300}
+.legal-contact-item .val a{color:#fff;text-decoration:none;transition:color .2s}
+.legal-contact-item .val a:hover{color:var(--amber-l)}
+
+/* FOOTER */
+.legal-footer{
+  border-top:1px solid var(--cream-d);padding:28px 60px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.legal-footer p{font-size:12px;color:var(--txt-l);font-weight:300}
+.legal-footer a{font-size:12px;color:var(--txt-l);text-decoration:none;transition:color .2s}
+.legal-footer a:hover{color:var(--amber)}
+.legal-footer-links{display:flex;gap:24px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .legal-wrap{grid-template-columns:1fr;gap:40px;padding:50px 32px 80px}
+  .toc{position:relative;top:0}
+  .toc-note{display:none}
+  .legal-contact-grid{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:600px){
+  .topbar,.legal-hero,.legal-footer{padding-left:24px;padding-right:24px}
+  .legal-hero{padding-top:40px;padding-bottom:50px}
+  .legal-contact-card{padding:28px 24px}
+  .legal-meta{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="index.html" class="topbar-logo">Mondi Mobileri Domi</a>
+  <a href="index.html" class="topbar-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Kthehu te Faqja Kryesore
+  </a>
+</div>
+
+<!-- HERO -->
+<section class="legal-hero">
+  <div class="legal-hero-accent"></div>
+  <div class="inner">
+    <div class="legal-eyebrow">Dokument Ligjor</div>
+    <h1>Politika e <em>Privatësisë</em></h1>
+    <p>Kjo politikë shpjegon se si Mondi Mobileri Domi mbledh, përdor, ruan dhe mbron të dhënat personale të vizitorëve dhe klientëve të saj, në përputhje me Kushtetutën e Republikës së Shqipërisë dhe legjislacionin në fuqi për mbrojtjen e të dhënave personale.</p>
+    <div class="legal-meta">
+      <div class="legal-meta-item">Hyn në fuqi
+        <strong>13 Qershor 2026</strong>
+      </div>
+      <div class="legal-meta-item">Përditësimi i fundit
+        <strong>13 Qershor 2026</strong>
+      </div>
+      <div class="legal-meta-item">Kontrolluesi i të dhënave
+        <strong>Mondi Mobileri Domi</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="legal-wrap">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <div class="toc-title">Përmbajtja</div>
+    <ol>
+      <li><a href="#hyrje"><span>I.</span> Hyrje dhe Baza Ligjore</a></li>
+      <li><a href="#kontrolluesi"><span>II.</span> Kush Jemi Ne</a></li>
+      <li><a href="#te-dhenat"><span>III.</span> Të Dhënat që Mbledhim</a></li>
+      <li><a href="#qellimi"><span>IV.</span> Qëllimi i Përpunimit</a></li>
+      <li><a href="#baza-ligjore"><span>V.</span> Baza Ligjore e Përpunimit</a></li>
+      <li><a href="#ruajtja"><span>VI.</span> Ruajtja e të Dhënave</a></li>
+      <li><a href="#ndarja"><span>VII.</span> Ndarja me Palë të Treta</a></li>
+      <li><a href="#siguria"><span>VIII.</span> Siguria e të Dhënave</a></li>
+      <li><a href="#cookies"><span>IX.</span> Cookies dhe Teknologji të Ngjashme</a></li>
+      <li><a href="#te-drejtat"><span>X.</span> Të Drejtat Tuaja</a></li>
+      <li><a href="#te-miturit"><span>XI.</span> Mbrojtja e të Miturve</a></li>
+      <li><a href="#ndryshimet"><span>XII.</span> Ndryshime në Politikë</a></li>
+      <li><a href="#kontakt"><span>XIII.</span> Na Kontaktoni dhe Ankesat</a></li>
+    </ol>
+    <div class="toc-note">
+      <p><strong>Shënim:</strong> Ky dokument ka qëllim informues dhe nuk zëvendëson këshillimin juridik individual. Për çështje specifike, ju rekomandojmë të konsultoheni me Zyrën e Komisionerit për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale (IDP).</p>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="legal-content">
+
+    <section id="hyrje">
+      <h2><span class="legal-num">I.</span> Hyrje dhe Baza Ligjore</h2>
+      <p>Mondi Mobileri Domi ("ne", "kompania", "Mondi Mobileri Domi") respekton privatësinë e çdo personi që viziton këtë faqe interneti ose komunikon me ne për shërbimet tona të mobiljeve me porosi. Kjo Politikë e Privatësisë ("Politika") përshkruan mënyrën se si mbledhim, përpunojmë, ruajmë, ndajmë dhe mbrojmë të dhënat tuaja personale.</p>
+      <p>Kjo Politikë është hartuar në përputhje me:</p>
+      <ul>
+        <li><strong>Kushtetutën e Republikës së Shqipërisë</strong>, neni 35 dhe neni 36, të cilët garantojnë të drejtën e çdo personi për mbrojtjen e të dhënave personale dhe lirinë e korrespondencës dhe komunikimeve.</li>
+        <li><strong>Ligjin nr. 9887, datë 10.03.2008 "Për Mbrojtjen e të Dhënave Personale"</strong>, të ndryshuar, si dhe aktet nënligjore në zbatim të tij.</li>
+        <li><strong>Ligjin nr. 9918, datë 19.05.2008 "Për Komunikimet Elektronike në Republikën e Shqipërisë"</strong>, të ndryshuar, për pjesët që lidhen me komunikimet elektronike dhe marketingun direkt.</li>
+        <li>Udhëzimet dhe vendimet e <strong>Zyrës së Komisionerit për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale (IDP)</strong>, autoriteti mbikëqyrës në Republikën e Shqipërisë.</li>
+        <li>Standardet e <strong>Rregullores së Përgjithshme për Mbrojtjen e të Dhënave (GDPR – Rregullorja (BE) 2016/679)</strong>, të cilat i marrim si praktikë të mirë ndërkombëtare, edhe pse nuk jemi subjekt i drejtpërdrejtë i kësaj rregulloreje.</li>
+      </ul>
+      <p>Duke përdorur faqen tonë të internetit ose duke na kontaktuar nëpërmjet formularëve, telefonit, WhatsApp ose adresës elektronike, ju konfirmoni se keni lexuar dhe pranuar kushtet e kësaj Politike.</p>
+    </section>
+
+    <section id="kontrolluesi">
+      <h2><span class="legal-num">II.</span> Kush Jemi Ne</h2>
+      <p>Kontrolluesi i të dhënave personale, sipas kuptimit të nenit 3 të Ligjit nr. 9887/2008, është:</p>
+      <table class="legal-table">
+        <tr><th>Emri i Subjektit</th><td>Mondi Mobileri Domi</td></tr>
+        <tr><th>Aktiviteti</th><td>Prodhim dhe tregtim mobiljesh me porosi (kuzhina, dhoma gjumi, dhoma fëmijësh, paradhoma, tavolina darke)</td></tr>
+        <tr><th>Adresa</th><td>RW23+GHH, Kuçovë, Shqipëri</td></tr>
+        <tr><th>Telefon</th><td>+355 69 213 4320</td></tr>
+        <tr><th>Email</th><td>info@mondimobileridomi.al</td></tr>
+      </table>
+      <p>Çdo pyetje në lidhje me përpunimin e të dhënave tuaja personale mund të na drejtohet duke përdorur të dhënat e kontaktit të mësipërme ose në seksionin "Na Kontaktoni" në fund të kësaj Politike.</p>
+    </section>
+
+    <section id="te-dhenat">
+      <h2><span class="legal-num">III.</span> Të Dhënat që Mbledhim</h2>
+      <p>Në varësi të mënyrës se si ndërveproni me ne, mund të mbledhim kategoritë e mëposhtme të të dhënave personale:</p>
+      <h3>Të dhëna identifikuese dhe kontakti</h3>
+      <ul>
+        <li>Emri dhe mbiemri</li>
+        <li>Adresa e postës elektronike (email)</li>
+        <li>Numri i telefonit, përfshirë kur na kontaktoni nëpërmjet WhatsApp</li>
+        <li>Adresa e dorëzimit ose vendndodhja e projektit (kur kërkohet matje ose dorëzim)</li>
+      </ul>
+      <h3>Të dhëna mbi kërkesën ose porosinë</h3>
+      <ul>
+        <li>Përshkrimi i produktit ose shërbimit të kërkuar (p.sh. kuzhinë me porosi, tavolinë darke)</li>
+        <li>Mesazhet, kërkesat dhe korrespondenca e shkëmbyer me ne</li>
+        <li>Preferencat e dizajnit, matjet e hapësirës dhe detaje të tjera që ju vetë na ofroni</li>
+      </ul>
+      <h3>Të dhëna teknike</h3>
+      <ul>
+        <li>Adresa IP, lloji i shfletuesit dhe i pajisjes, gjuha e shfletuesit</li>
+        <li>Të dhëna anonime mbi përdorimin e faqes (faqet e vizituara, kohëzgjatja e vizitës), kur faqja përdor cookie ose mjete analitike</li>
+      </ul>
+      <div class="legal-highlight">
+        <p><strong>Ne nuk mbledhim</strong> kategori të veçanta të dhënash sipas nenit 6 të Ligjit nr. 9887/2008 (si të dhëna mbi shëndetin, origjinën etnike, bindjet fetare ose politike), përveçse nëse ju vetë na i jepni vullnetarisht në një komunikim dhe vetëm për qëllime të lidhura ngushtë me porosinë tuaj.</p>
+      </div>
+    </section>
+
+    <section id="qellimi">
+      <h2><span class="legal-num">IV.</span> Qëllimi i Përpunimit</h2>
+      <p>Të dhënat tuaja personale përpunohen vetëm për qëllimet e mëposhtme, në respektim të parimit të kufizimit të qëllimit sipas nenit 5 të Ligjit nr. 9887/2008:</p>
+      <ol class="legal-list">
+        <li>Për t'iu përgjigjur kërkesave, pyetjeve dhe kërkesave për oferta që dërgoni nëpërmjet formularit të kontaktit, email-it, telefonit ose WhatsApp;</li>
+        <li>Për të organizuar konsultime, matje në vend dhe për të hartuar projekte dizajni sipas kërkesave tuaja;</li>
+        <li>Për të përgatitur, prodhuar dhe dorëzuar mobiljet e porositura, përfshirë komunikimin për afatet dhe statusin e porosisë;</li>
+        <li>Për qëllime kontabël, fiskale dhe administrative, në përputhje me legjislacionin tatimor në fuqi;</li>
+        <li>Për të përmirësuar funksionimin e faqes së internetit dhe shërbimet tona, përmes analizave statistikore të bëra në formë të anonimizuar kur është e mundur;</li>
+        <li>Për të përmbushur detyrime ligjore ndaj autoriteteve publike, kur kërkohet me ligj.</li>
+      </ol>
+      <p>Të dhënat tuaja <strong>nuk përdoren</strong> për marketing automatik ose dërgim mesazhesh komerciale pa pëlqimin tuaj të shprehur paraprakisht.</p>
+    </section>
+
+    <section id="baza-ligjore">
+      <h2><span class="legal-num">V.</span> Baza Ligjore e Përpunimit</h2>
+      <p>Përpunimi i të dhënave tuaja personale bazohet, sipas rastit, në një ose më shumë nga bazat ligjore të njohura nga Ligji nr. 9887/2008:</p>
+      <ul>
+        <li><strong>Pëlqimi:</strong> kur na e jepni vullnetarisht informacionin tuaj nëpërmjet një formulari ose mesazhi, duke pranuar të na kontaktojmë në lidhje me kërkesën tuaj.</li>
+        <li><strong>Ekzekutimi i një kontrate ose hapat para lidhjes së kontratës:</strong> kur përpunojmë të dhënat tuaja për të përgatitur një ofertë, projekt ose porosi mobilje.</li>
+        <li><strong>Interesi legjitim:</strong> për të siguruar funksionimin, sigurinë dhe përmirësimin e faqes tonë, gjithmonë duke respektuar të drejtat dhe liritë tuaja themelore.</li>
+        <li><strong>Detyrimi ligjor:</strong> kur ruajtja ose komunikimi i të dhënave kërkohet nga legjislacioni fiskal, tregtar ose nga kërkesa e autoriteteve kompetente.</li>
+      </ul>
+    </section>
+
+    <section id="ruajtja">
+      <h2><span class="legal-num">VI.</span> Ruajtja e të Dhënave</h2>
+      <p>Të dhënat tuaja personale ruhen vetëm për periudhën e nevojshme për të përmbushur qëllimet e përshkruara në këtë Politikë, në përputhje me parimin e kufizimit të ruajtjes (neni 5, shkronja "ë" e Ligjit nr. 9887/2008):</p>
+      <table class="legal-table">
+        <tr><th>Kategoria e të Dhënave</th><th>Periudha e Ruajtjes</th></tr>
+        <tr><td>Mesazhe dhe kërkesa kontakti pa vazhdimësi në porosi</td><td>Deri në 12 muaj nga data e komunikimit të fundit</td></tr>
+        <tr><td>Të dhëna të lidhura me një porosi ose kontratë të finalizuar</td><td>Sipas afateve të parashikuara nga legjislacioni tatimor dhe kontabël në fuqi (zakonisht deri në 5 vjet)</td></tr>
+        <tr><td>Të dhëna teknike/analitike anonime</td><td>Deri në 24 muaj, ose më pak, në formë të agreguar</td></tr>
+      </table>
+      <p>Pas përfundimit të periudhës së ruajtjes, të dhënat fshihen ose anonimizohen në mënyrë të sigurt, përveçse nëse ligji kërkon ruajtje më të gjatë ose ekziston një mosmarrëveshje në proces.</p>
+    </section>
+
+    <section id="ndarja">
+      <h2><span class="legal-num">VII.</span> Ndarja me Palë të Treta</h2>
+      <p>Mondi Mobileri Domi <strong>nuk shet, nuk jep me qira dhe nuk tregton</strong> të dhënat tuaja personale tek palë të treta për qëllime marketingu. Të dhënat tuaja mund t'u komunikohen vetëm subjekteve të mëposhtme, dhe vetëm në masën e nevojshme:</p>
+      <ul>
+        <li><strong>Ofruesve të shërbimeve teknike</strong> që na mbështesin në funksionimin e faqes së internetit, dërgimin e email-eve ose mbajtjen e komunikimit (p.sh. platforma të dërgimit të email-it ose mesazherie), të cilët veprojnë si përpunues të të dhënave dhe janë të detyruar contraktualisht të respektojnë konfidencialitetin.</li>
+        <li><strong>Bashkëpunëtorëve dhe nënkontraktorëve</strong> të përfshirë në prodhimin, transportin ose montimin e mobiljeve, vetëm me informacionin minimal të nevojshëm (p.sh. emri, adresa, numri i telefonit për koordinim dorëzimi).</li>
+        <li><strong>Autoriteteve shtetërore</strong>, kur kjo kërkohet me ligj, urdhër gjyqësor ose kërkesë zyrtare nga organe kompetente (p.sh. autoritetet tatimore, organet e zbatimit të ligjit).</li>
+      </ul>
+      <p>Çdo palë e tretë me të cilën ndajmë të dhëna është e detyruar të zbatojë masa të përshtatshme sigurie dhe të përpunojë të dhënat vetëm sipas instruksioneve tona dhe për qëllimet e specifikuara.</p>
+    </section>
+
+    <section id="siguria">
+      <h2><span class="legal-num">VIII.</span> Siguria e të Dhënave</h2>
+      <p>Në përputhje me nenin 27 të Ligjit nr. 9887/2008, kemi vendosur masa teknike dhe organizative të përshtatshme për të mbrojtur të dhënat tuaja personale nga shkatërrimi aksidental ose i paligjshëm, humbja, ndryshimi, zbulimi ose aksesi i paautorizuar, duke përfshirë:</p>
+      <ul>
+        <li>Kufizimin e aksesit në të dhënat personale vetëm për personelin e autorizuar dhe vetëm për qëllimet e përcaktuara në këtë Politikë;</li>
+        <li>Përdorimin e lidhjeve të sigurta (HTTPS) për transmetimin e të dhënave nëpërmjet formularëve të faqes;</li>
+        <li>Rishikim periodik të masave të sigurisë dhe trajnim të personelit në lidhje me konfidencialitetin e të dhënave;</li>
+        <li>Procedura të brendshme për trajtimin e çdo incidenti të mundshëm që prek të dhënat personale, përfshirë njoftimin e subjekteve dhe autoriteteve kompetente kur kërkohet me ligj.</li>
+      </ul>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="legal-num">IX.</span> Cookies dhe Teknologji të Ngjashme</h2>
+      <p>Faqja jonë e internetit mund të përdorë <strong>cookies</strong> dhe teknologji të ngjashme për të siguruar funksionimin korrekt të faqes dhe për të kuptuar mënyrën se si vizitorët ndërveprojnë me përmbajtjen tonë.</p>
+      <h3>Llojet e cookies</h3>
+      <ul>
+        <li><strong>Cookies thelbësore:</strong> të nevojshme për funksionimin bazë të faqes (p.sh. shfaqja korrekte e elementeve të navigimit).</li>
+        <li><strong>Cookies analitike:</strong> ndihmojnë në kuptimin e mënyrës se si përdoret faqja, në formë të agreguar dhe, kur është e mundur, të anonimizuar.</li>
+      </ul>
+      <p>Ju keni mundësi të kontrolloni ose fshini cookies nëpërmjet cilësimeve të shfletuesit tuaj. Çaktivizimi i cookies mund të ndikojë në disa funksione të faqes.</p>
+    </section>
+
+    <section id="te-drejtat">
+      <h2><span class="legal-num">X.</span> Të Drejtat Tuaja</h2>
+      <p>Sipas Kreut V (nenet 12–21) të Ligjit nr. 9887/2008, çdo subjekt i të dhënave personale gëzon të drejtat e mëposhtme në lidhje me të dhënat e tij të mbajtura nga Mondi Mobileri Domi:</p>
+      <ol class="legal-list">
+        <li><strong>E drejta e informimit</strong> – të dini nëse të dhënat tuaja po përpunohen, për çfarë qëllimi dhe nga kush;</li>
+        <li><strong>E drejta e aksesit</strong> – të kërkoni një kopje të të dhënave personale që mbajmë për ju;</li>
+        <li><strong>E drejta e korrigjimit</strong> – të kërkoni korrigjimin e të dhënave të pasakta ose të paplota;</li>
+        <li><strong>E drejta e fshirjes</strong> – të kërkoni fshirjen e të dhënave kur përpunimi nuk është më i nevojshëm ose është i paligjshëm;</li>
+        <li><strong>E drejta e kundërshtimit</strong> – të kundërshtoni përpunimin e të dhënave tuaja për arsye të lidhura me situatën tuaj specifike;</li>
+        <li><strong>E drejta e bllokimit</strong> – të kërkoni kufizimin e përkohshëm të përpunimit, p.sh. derisa të verifikohet saktësia e të dhënave;</li>
+        <li><strong>E drejta e tërheqjes së pëlqimit</strong> – kur përpunimi bazohet në pëlqim, ta tërhiqni atë në çdo moment, pa cenuar ligjshmërinë e përpunimit të kryer më parë.</li>
+      </ol>
+      <p>Për të ushtruar çdo të drejtë të mësipërme, mund të na kontaktoni nëpërmjet adresës së email-it ose telefonit të dhënë në seksionin "Na Kontaktoni". Do t'i përgjigjemi kërkesës tuaj brenda afateve të parashikuara nga ligji, zakonisht jo më shumë se 30 ditë nga data e marrjes së kërkesës.</p>
+    </section>
+
+    <section id="te-miturit">
+      <h2><span class="legal-num">XI.</span> Mbrojtja e të Miturve</h2>
+      <p>Shërbimet e Mondi Mobileri Domi u drejtohen personave të rritur dhe nuk synojnë mbledhjen e të dhënave personale nga persona nën moshën 18 vjeç. Nëse konstatojmë se kemi mbledhur pa dashje të dhëna personale nga një i mitur pa pëlqimin e prindit ose kujdestarit ligjor, do t'i fshijmë ato sa më shpejt të jetë e mundur.</p>
+    </section>
+
+    <section id="ndryshimet">
+      <h2><span class="legal-num">XII.</span> Ndryshime në Politikë</h2>
+      <p>Mondi Mobileri Domi mund të përditësojë këtë Politikë të Privatësisë herë pas here, për shkak të ndryshimeve në legjislacion, praktikat tona të biznesit ose shërbimet e ofruara. Çdo ndryshim do të reflektohet në këtë faqe, me përditësimin e datës "Përditësimi i fundit" në krye të dokumentit. Ju inkurajojmë të rishikoni periodikisht këtë Politikë për t'u informuar mbi mënyrën se si mbrojmë të dhënat tuaja.</p>
+    </section>
+
+    <!-- CONTACT CARD -->
+    <section id="kontakt">
+      <h2><span class="legal-num">XIII.</span> Na Kontaktoni dhe Ankesat</h2>
+      <p>Nëse keni pyetje, kërkesa ose shqetësime në lidhje me këtë Politikë të Privatësisë ose me mënyrën se si trajtojmë të dhënat tuaja personale, mund të na kontaktoni drejtpërdrejt:</p>
+      <div class="legal-contact-card">
+        <div class="legal-contact-accent"></div>
+        <h2>Kontrolluesi i <em>të Dhënave</em></h2>
+        <p>Mondi Mobileri Domi është e gatshme t'iu përgjigjet kërkesave tuaja për ushtrimin e të drejtave mbi të dhënat personale brenda afateve ligjore.</p>
+        <div class="legal-contact-grid">
+          <div class="legal-contact-item">
+            <div class="label">Email</div>
+            <div class="val"><a href="mailto:info@mondimobileridomi.al">info@mondimobileridomi.al</a></div>
+          </div>
+          <div class="legal-contact-item">
+            <div class="label">Telefon</div>
+            <div class="val"><a href="tel:+355692134320">+355 69 213 4320</a></div>
+          </div>
+          <div class="legal-contact-item">
+            <div class="label">Adresa</div>
+            <div class="val">RW23+GHH, Kuçovë, Shqipëri</div>
+          </div>
+        </div>
+      </div>
+      <h3>Ankesa pranë Autoritetit Mbikëqyrës</h3>
+      <p>Nëse besoni se të drejtat tuaja për mbrojtjen e të dhënave personale janë cenuar dhe nuk jeni të kënaqur me përgjigjen tonë, keni të drejtë të paraqitni një ankesë pranë:</p>
+      <div class="legal-highlight">
+        <p><strong>Zyra e Komisionerit për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale (IDP)</strong><br>
+        Rruga "Abdi Toptani", Nr. 5, Tiranë, Shqipëri</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="legal-footer">
+  <p>© 2026 Mondi Mobileri Domi. Të gjitha të drejtat e rezervuara.</p>
+  <div class="legal-footer-links">
+    <a href="index.html">Faqja Kryesore</a>
+    <a href="index.html#contact">Kontakt</a>
+  </div>
+</div>
+
+</body>
+</html>
