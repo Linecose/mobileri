@@ -121,8 +121,12 @@ body:has(a:hover) .cursor-ring,body:has(button:hover) .cursor-ring{width:56px;he
 }
 .nav-links a:hover{color:#fff}
 .nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a.active{color:#fff}
+.nav-links a.active::after{transform:scaleX(1)}
 .nav.scrolled .nav-links a{color:var(--txt-m)}
 .nav.scrolled .nav-links a:hover{color:var(--txt)}
+.nav.scrolled .nav-links a.active{color:var(--txt)}
+.nav.scrolled .nav-links a.active::after{transform:scaleX(1)}
 .nav-cta{
   font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
   color:#fff;border:1.5px solid rgba(255,255,255,.4);border-radius:999px;
@@ -167,13 +171,13 @@ body:has(a:hover) .cursor-ring,body:has(button:hover) .cursor-ring{width:56px;he
 }
 .hero-grain{
   position:fixed;inset:0;z-index:-1;opacity:1;
-  background:url("bg.png") center/cover no-repeat;
+  background:url("bg.jpg") center/cover no-repeat;
   background-size:cover;pointer-events:none;
 }
 @keyframes heroZoom{from{transform:scale(1.1) translateY(0)}to{transform:scale(1) translateY(0)}}
 .hero-overlay{
   position:fixed;inset:0;z-index:1;opacity:.04;
-  background-image:url("bg.png");
+  background-image:url("bg.jpg");
   background-size:200px;pointer-events:none;
 }
 .hero-overlay{
@@ -645,6 +649,7 @@ footer{background:#1e120a;padding:80px 0 36px;}
   .footer-top{grid-template-columns:1fr;gap:32px}
   .footer-bottom{flex-direction:column;align-items:flex-start;gap:12px}
   .footer-legal{flex-wrap:wrap;gap:16px}
+  .featured-img img{height:65vh !important;}
 }
 @media(max-width:380px){
   .hero-content{padding:0 20px 64px}
@@ -733,8 +738,8 @@ footer{background:#1e120a;padding:80px 0 36px;}
         </div>
       </div>
       <div class="about-img-wrap reveal-right">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC79sm9RF7tg-2-086tvvunROTjhmb7oOfiBEjOyBmS9jLljck-ZrGgZ_HRJ2UsoNGnZTxZ6Fg6h1zl3cXlBDCCo2ZBHm_CdN0bgc4EWvNI_tXz6vyxEj_XvcE7po4JYIXS7ROCWmP0Y4dtG7TJft8PjUD4z1lteiq6VD1BAcJ7LoKNqVs3Tqib3LRXe5V3ktiA-KfAQmxPMFHfZIvl50ASIvn-F4IvUhLqp8ltPO5XTWjTArwez3yV8xNqVPdSUSzMv4U2vpIsmEZZ"
-          alt="Karrige e palosshme druri e punuar me dorë">
+        <img src="g7.jpg"
+          alt="Punishte Mondi Mobileri Domi - procesi i punës me dorë dhe mjeshtëria e artizanëve vendas">
         <div class="about-img-badge">
           <div class="about-img-badge-num">7+</div>
           <div class="about-img-badge-label">Vite Mjeshtërie</div>
@@ -757,7 +762,7 @@ footer{background:#1e120a;padding:80px 0 36px;}
     <div class="cat-grid">
       <div class="cat-card reveal" style="transition-delay:.05s">
         <div class="cat-card-img">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC79sm9RF7tg-2-086tvvunROTjhmb7oOfiBEjOyBmS9jLljck-ZrGgZ_HRJ2UsoNGnZTxZ6Fg6h1zl3cXlBDCCo2ZBHm_CdN0bgc4EWvNI_tXz6vyxEj_XvcE7po4JYIXS7ROCWmP0Y4dtG7TJft8PjUD4z1lteiq6VD1BAcJ7LoKNqVs3Tqib3LRXe5V3ktiA-KfAQmxPMFHfZIvl50ASIvn-F4IvUhLqp8ltPO5XTWjTArwez3yV8xNqVPdSUSzMv4U2vpIsmEZZ"
+          <img src="g6.jpg"
             alt="Kuzhinë dhe dollapë me porosi">
           <div class="cat-card-overlay"><span class="cat-card-cta">Kërko Ofertë →</span></div>
         </div>
@@ -766,8 +771,8 @@ footer{background:#1e120a;padding:80px 0 36px;}
       </div>
       <div class="cat-card reveal" style="transition-delay:.1s">
         <div class="cat-card-img">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEEeI7xJtFi7u-5q3GXG3HYCTyZGbifwiZl4kvh3YR_o9xlFtgzoKnPrQlQ05yArfSdrY58WK0QHOA-lJPhe3G_fkqeNzPvIYUag1quYC02Gdcj6qoaWn8EmCI5Thqb2-cj8MJ7KP3rDiZWjY6A14oiwyT209wtf-8Cydndd7pZbhIa9d_WlbQztsAY0YabObagr1NTmwFG1XRzntEn7NLLG-Pwu4mp3DKs0jUMwjE8MuiOOQg3AF0K8G7svqp-cCqky7xfvDDa8J7"
-            alt="Karrige druri e gjelbër">
+          <img src="g10.jpg"
+            alt="Mobilje të punuara me dorë për dhoma të ndryshme të shtëpisë">
           <div class="cat-card-overlay"><span class="cat-card-cta">Blej Mobilje →</span></div>
         </div>
         <h3>Mobilje</h3>
@@ -775,7 +780,7 @@ footer{background:#1e120a;padding:80px 0 36px;}
       </div>
       <div class="cat-card reveal" style="transition-delay:.15s">
         <div class="cat-card-img">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJAWFPVJ0vQsWxMn2M9Tk_RX09RkB4iVd_bbPwO2nm_I1TfYG9fOOhK6gCcJzog9Q1fQNZ6VtGzwG1OKRgLLPWCsPy2uf_dUIgtXZgF7tMOORs3Z4TEUICtuzG-c_BJDviIHSxpgyooElQO3HVeVryQr_lO6qSVbJVjpGRaELTJIa_tx95zBH7haMkoROha1uiKwAADUR2ZsKHnyQ_UOj5DxCSbfptCxuFwVlobQpXP-eLUgCEwvYZb4pWAix04TgoaP6TZ88zPVbe"
+          <img src="g3.jpg"
             alt="Objekte dekorative për shtëpi">
           <div class="cat-card-overlay"><span class="cat-card-cta">Blej Dekor →</span></div>
         </div>
@@ -791,8 +796,7 @@ footer{background:#1e120a;padding:80px 0 36px;}
   <div class="featured-accent"></div>
   <div class="featured-inner">
     <div class="featured-img">
-      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC79sm9RF7tg-2-086tvvunROTjhmb7oOfiBEjOyBmS9jLljck-ZrGgZ_HRJ2UsoNGnZTxZ6Fg6h1zl3cXlBDCCo2ZBHm_CdN0bgc4EWvNI_tXz6vyxEj_XvcE7po4JYIXS7ROCWmP0Y4dtG7TJft8PjUD4z1lteiq6VD1BAcJ7LoKNqVs3Tqib3LRXe5V3ktiA-KfAQmxPMFHfZIvl50ASIvn-F4IvUhLqp8ltPO5XTWjTArwez3yV8xNqVPdSUSzMv4U2vpIsmEZZ"
-        alt="Dhoma e ndenjes minimale luksoze">
+      <img src="g2.jpg" alt="Dhoma e ndenjes minimale luksoze" style="height: 100vh">
     </div>
     <div class="featured-text reveal">
       <div class="featured-label">Risi · Pjesa e veçantë</div>
@@ -852,11 +856,11 @@ footer{background:#1e120a;padding:80px 0 36px;}
     <a href="https://www.instagram.com/mondi_mobileri_domi/" target="_blank" rel="noopener noreferrer" class="btn-outline">Shiko të gjitha</a>
   </div>
   <div class="gallery-grid">
-    <div class="g-item g1 reveal"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaAZ6iN-aqUpY4TXBPgJV30wNj2PC0LiW6k88god580EaBkPfCjWZ3yoCjFcRRl6jkBuclnMKGsMv54iNibOtnaovTydJj9qzrxqCET43pK4MvztsPpZIsSIOpCAHMuKK6ARcXZYCzNpb-DtKa_5Q-5h0BSPjqM3B96O3dGu8BVmWr-FiaLHo9w_iEkJkLkYm1QzqyFcy_GT72h0D85f3LsPb4BGRV9RtrX0AD2eOkGzJKBPUEMS5IpYAlfCVja13tPPDJgdWebCq" alt="Tavolinë darke"></div>
-    <div class="g-item g2 reveal" style="transition-delay:.08s"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2xCtHmLnsLwH90mfPcxbdSbcjt1pjGJ-he_5UVP94YN0bPwSFHaoVIHRrT7oOtHgVJXguWM7F0OaYYohYnvQhU0NIKNdS9YsjBfu1BoNCpZvgphJ6-7-cB2NQE9U0rcOCPlcuqy_RgYY2WfvLEw63TDPfytEJbizmuWXloOta1JHsVS8az_lp0rvGlRhmKseW5d_kclEIZzyBhXn5YkWIXK16p0ngIQpjgaR6lOLHe_t3NC3rNi8" alt="Sofë prej lëkure"></div>
-    <div class="g-item g3 reveal" style="transition-delay:.16s"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEEeI7xJtFi7u-5q3GXG3HYCTyZGbifwiZl4kvh3YR_o9xlFtgzoKnPrQlQ05yArfSdrY58WK0QHOA-lJPhe3G_fkqeNzPvIYUag1quYC02Gdcj6qoaWn8EmCI5Thqb2-cj8MJ7KP3rDiZWjY6A14oiwyT209wtf-8Cydndd7pZbhIa9d_WlbQztsAY0YabObagr1NTmwFG1XRzntEn7NLLG-Pwu4mp3DKs0jUMwjE8MuiOOQg3AF0K8G7svqp-cCqky7xfvDDa8J7" alt="Karrige e gjelbër"></div>
-    <div class="g-item g4 reveal" style="transition-delay:.08s"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgo7OWmFdTp4p3Chj5BHSv2nfsT-HuXAc50swj3ad9bI4gLHqvjMt4KeO2HvK24XfQVcI1gsz10K9dH5F19wU3sMy6YmiH9QWxiTKJ5F-gtWSoO8eSNLdbO0A7B-UCP2d27rUw_IlauWDorpvFKGt7S1e6xQhZIfSmrZtVLUe9ZaLTs75QvDLwbpcrsS3SdKnIObcw40Bilbf_j2CbJ5y-ECZNRzP_wc3FcIdcpI3pJYk-4An7iiq6Iv_4vXqx-6SdUxlctTrEWLf" alt="Dekor tavoline kafeje"></div>
-    <div class="g-item g5 reveal" style="transition-delay:.16s"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDavezMtPvxbJ0G8paU11dbuH6latR4sDu-O6ksrcw6hRzrettmHvSk2HD7a47zxqeWRIc7fbUAngsnAKBJmxQ9dxuSWSH6f8aFGr_OjoLuktr6N1Y8tFtTEMYH-LHA2y2Zx4KeRcjVfxlH939nU4GJo5BA-bYeel40gsmO1uHMZJbS9UUkVHqvh7B7X5ghj29UUWkdONWjQiRO0EzbFbt42nTN9t_Lnbpj2zYvJtW4IVGs_iY1O4wcy-LjDwJGvr" alt="Detaj tavoline darke"></div>
+    <div class="g-item g1 reveal"><img src="g0.jpg" alt="Tavolinë darke druri me karrige dhe qiri — Mondi Mobileri Domi" loading="lazy"></div>
+    <div class="g-item g2 reveal" style="transition-delay:.08s"><img src="g5.jpg" alt="Paradhomë me varëse rrobash druri dhe dollap i bardhë me porosi" loading="lazy"></div>
+    <div class="g-item g3 reveal" style="transition-delay:.16s"><img src="g1.jpg" alt="Kuzhinë dhe shkallë me mbulesa druri lisi — punë e realizuar nga Mondi Mobileri Domi" loading="lazy"></div>
+    <div class="g-item g4 reveal" style="transition-delay:.08s"><img src="g4.jpg" alt="Panel TV me rripa druri gri dhe ndriçim LED ambiental me porosi" loading="lazy"></div>
+    <div class="g-item g5 reveal" style="transition-delay:.16s"><img src="g8.jpg" alt="Kuzhinë klasike e bardhë në formë L me plan pune mermeri — punë me porosi" loading="lazy"></div>
   </div>
 </section>
 
@@ -872,24 +876,24 @@ footer{background:#1e120a;padding:80px 0 36px;}
     <div class="test-grid">
       <div class="test-card reveal">
         <div class="test-deco">"</div>
-        <img class="test-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaAZ6iN-aqUpY4TXBPgJV30wNj2PC0LiW6k88god580EaBkPfCjWZ3yoCjFcRRl6jkBuclnMKGsMv54iNibOtnaovTydJj9qzrxqCET43pK4MvztsPpZIsSIOpCAHMuKK6ARcXZYCzNpb-DtKa_5Q-5h0BSPjqM3B96O3dGu8BVmWr-FiaLHo9w_iEkJkLkYm1QzqyFcy_GT72h0D85f3LsPb4BGRV9RtrX0AD2eOkGzJKBPUEMS5IpYAlfCVja13tPPDJgdWebCq" alt="Tavolinë darke">
+        <img class="test-card-img" src="g0.jpg" alt="Tavolinë darke druri me porosi — Mondi Mobileri Domi" loading="lazy">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">Çdo darkë me familjen ndjehet më e veçantë në tavolinën e re që porositëm nga Mondi Mobileri Domi.</p>
-        <p class="test-name">Pilar de Luna</p>
+        <p class="test-quote">Porositëm tavolinën e darkës dhe rezultati e kaloi çdo pritshmëri. Cilësia e drurit dhe finisimi janë të shkëlqyera — të gjithë miqtë na pyesin ku e morëm.</p>
+        <p class="test-name">Arlinda Hoxha</p>
       </div>
       <div class="test-card reveal" style="transition-delay:.1s">
         <div class="test-deco">"</div>
-        <img class="test-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2xCtHmLnsLwH90mfPcxbdSbcjt1pjGJ-he_5UVP94YN0bPwSFHaoVIHRrT7oOtHgVJXguWM7F0OaYYohYnvQhU0NIKNdS9YsjBfu1BoNCpZvgphJ6-7-cB2NQE9U0rcOCPlcuqy_RgYY2WfvLEw63TDPfytEJbizmuWXloOta1JHsVS8az_lp0rvGlRhmKseW5d_kclEIZzyBhXn5YkWIXK16p0ngIQpjgaR6lOLHe_t3NC3rNi8" alt="Sofë prej lëkure">
+        <img class="test-card-img" src="g5.jpg" alt="Paradhomë me varëse rrobash druri dhe dollap i bardhë me porosi" loading="lazy">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">Jam shumë e kënaqur me sofën time të re — cilësia është e shkëlqyer, është e rehatshme dhe ndryshon krejtësisht pamjen e shtëpisë sime.</p>
-        <p class="test-name">Agnes Rivera</p>
+        <p class="test-quote">Bëmë paradhomën e plotë me porosi dhe jemi shumë të kënaqur. Ekipi erdhi, mori matjet dhe e dorëzoi saktësisht siç e kishim imagjinuar — punë precize dhe profesionale.</p>
+        <p class="test-name">Erjon Çoku</p>
       </div>
       <div class="test-card reveal" style="transition-delay:.2s">
         <div class="test-deco">"</div>
-        <img class="test-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgo7OWmFdTp4p3Chj5BHSv2nfsT-HuXAc50swj3ad9bI4gLHqvjMt4KeO2HvK24XfQVcI1gsz10K9dH5F19wU3sMy6YmiH9QWxiTKJ5F-gtWSoO8eSNLdbO0A7B-UCP2d27rUw_IlauWDorpvFKGt7S1e6xQhZIfSmrZtVLUe9ZaLTs75QvDLwbpcrsS3SdKnIObcw40Bilbf_j2CbJ5y-ECZNRzP_wc3FcIdcpI3pJYk-4An7iiq6Iv_4vXqx-6SdUxlctTrEWLf" alt="Dekor tavoline kafeje">
+        <img class="test-card-img" src="g9.jpg" alt="Punishte e Mondi Mobileri Domi — prodhim mobiljesh me dorë" loading="lazy">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">Më pëlqen sa të qëndrueshme duken pjesët e mia dekoruese. Më duhet vetëm t'i rregulloj dhe tërë hapësira ndjehet si e re.</p>
-        <p class="test-name">Teban Castillo</p>
+        <p class="test-quote">Ishte hera e parë që porosisja mobilje me porosi dhe nuk do të kthehem kurrë tek të bërat me seri. Paneli i televizorit dhe kuzhina janë pikërisht siç i kisha kërkuar.</p>
+        <p class="test-name">Blerina Marku</p>
       </div>
     </div>
   </div>
@@ -994,9 +998,6 @@ footer{background:#1e120a;padding:80px 0 36px;}
           <a class="social-btn" href="https://www.instagram.com/mondi_mobileri_domi/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a class="social-btn" href="https://www.pinterest.com/mondimobileridomi/" target="_blank" rel="noopener" aria-label="Pinterest">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.19-.77 1.27-5.38 1.27-5.38s-.32-.65-.32-1.61c0-1.51.88-2.64 1.97-2.64.93 0 1.38.7 1.38 1.54 0 .94-.6 2.34-.91 3.64-.26 1.09.54 1.97 1.61 1.97 1.93 0 3.42-2.04 3.42-4.97 0-2.6-1.87-4.42-4.54-4.42-3.09 0-4.91 2.32-4.91 4.71 0 .93.36 1.5 1.33 1.5 1.47 0 2.05-1.01 2.05-2.22 0-1.36-.92-2.3-2.24-2.3-1.52 0-2.43 1.15-2.43 2.38 0 .87.33 1.46.84 1.92.23.22.26.33.18.6-.06.2-.21.69-.27.88-.09.28-.37.38-.68.28-1.9-.77-3.09-2.9-3.09-5.24 0-3.7 2.68-7.1 7.72-7.1 4.05 0 7.2 2.9 7.2 6.79 0 4.05-2.55 7.31-6.1 7.31-1.19 0-2.31-.62-2.69-1.35l-.73 2.78c-.26 1.01-.98 2.27-1.46 3.04-.44.71-1.34 1.51-1.97 1.46-.63-.05-1.01-.52-.83-1.16.16-.56.57-1.8.77-2.38.12-.34.03-.69-.27-.93-1.02-.88-1.7-2.21-1.7-3.59 0-2.83 2.04-5.74 5.88-5.74 3.26 0 5.03 2.37 5.03 4.93 0 2.01-.8 3.85-2.04 3.85-1.55 0-1.88-1.23-1.88-2.38 0-1.02.39-1.71.39-2.31 0-.82-.44-1.43-1.34-1.43-1.04 0-1.87 1.07-1.87 2.42 0 0 .62 2.54.71 3.01.08.36.14.78.14 1.13 0 1.05-.17 1.53-.51 2.12-.32.55-1.28 1.33-1.89 1.33-.69 0-1.34-.45-1.23-1.38.12-1.08.69-3.02.69-4.2 0-1.35-.74-2.32-2.23-2.32-1.67 0-3.02 1.62-3.02 3.75 0 1.47.74 2.45 1.77 2.45.21 0 .42-.03.62-.1.21-.07.44-.19.52-.3.11-.15.13-.32.08-.49-.09-.26-.3-.65-.35-.74-.11-.22-.18-.47-.18-.73 0-1.12.84-2.16 1.97-2.16 1.04 0 1.7.8 1.7 1.95 0 .44-.16.88-.45 1.18-.38.39-.7.51-.78.95-.06.28-.03.53.08.78.26.57 1.05.34 1.64.11.74-.3 1.5-.95 1.5-2.06 0-1.2-.82-2.24-2.45-2.24-1.41 0-2.23.82-2.23 1.79 0 .45.17.88.48 1.18.3.29.68.41 1.03.41.61 0 1.02-.27 1.22-.57.12-.16.17-.35.15-.54-.01-.09-.05-.18-.14-.26-.31-.29-1.08-.19-1.14.26-.02.1-.03.17-.03.26z"/></svg>
-          </a>
           <a class="social-btn" href="https://www.facebook.com/romeo.romi.731" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
@@ -1071,6 +1072,21 @@ footer{background:#1e120a;padding:80px 0 36px;}
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
+
+  // Active nav link
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  function updateActiveNav(){
+    const mid = window.innerHeight * 0.5;
+    let active = null;
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if(rect.top <= mid && rect.bottom > mid) active = sec.id;
+    });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + active));
+  }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
   const ham = document.getElementById('hamburger');
   const menu = document.getElementById('mobileMenu');
@@ -1179,6 +1195,25 @@ footer{background:#1e120a;padding:80px 0 36px;}
       alert("Mesazhi dështoi të dërgohej!");
     });
   });
+})();
+</script>
+
+<script>
+// Scroll position memory
+(function(){
+  var key = 'scrollY_mondi';
+  var saved = sessionStorage.getItem(key);
+  if(saved) window.scrollTo(0, parseInt(saved, 10));
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      requestAnimationFrame(function(){
+        sessionStorage.setItem(key, Math.round(window.scrollY));
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive: true});
 })();
 </script>
 </body>
